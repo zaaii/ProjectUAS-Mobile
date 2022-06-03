@@ -7,14 +7,23 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.zai.movieku.network.Movie
+import com.zai.movieku.network.Tv
 import com.zai.movieku.ui.movies.MovieAdapter
 import com.zai.movieku.ui.movies.MoviesApiStatus
+import com.zai.movieku.ui.tv.TvAdapter
+import com.zai.movieku.ui.tv.TvApiStatus
 
 private const val BASE_URL_IMAGE = "https://image.tmdb.org/t/p/w500/"
 
 @BindingAdapter("listData")
 fun bindRecyclerView(recyclerView: RecyclerView, data: List<Movie>?){
     val adapter = recyclerView.adapter as MovieAdapter
+    adapter.submitList(data)
+}
+
+@BindingAdapter("listData")
+fun bindRecyclerView(recyclerView: RecyclerView, data: List<Tv>?){
+    val adapter = recyclerView.adapter as TvAdapter
     adapter.submitList(data)
 }
 
@@ -39,6 +48,22 @@ fun bindStatus(statusImageView: ImageView, status: MoviesApiStatus?) {
             statusImageView.visibility = View.GONE
         }
         MoviesApiStatus.ERROR -> {
+            statusImageView.visibility = View.VISIBLE
+            statusImageView.setImageResource(R.drawable.ic_connection_error)
+        }
+    }
+}
+
+@BindingAdapter("apiStatus")
+fun bindStatus(statusImageView: ImageView, status: TvApiStatus?) {
+    when (status) {
+        TvApiStatus.LOADING -> {
+            statusImageView.visibility = View.VISIBLE
+        }
+        TvApiStatus.DONE -> {
+            statusImageView.visibility = View.GONE
+        }
+        TvApiStatus.ERROR -> {
             statusImageView.visibility = View.VISIBLE
             statusImageView.setImageResource(R.drawable.ic_connection_error)
         }

@@ -29,11 +29,17 @@ interface MoviesApiService {
 
 interface TvApiService {
     @GET("discover/tv?api_key=efbf02374fe534aa08c13ca1873bc1f7")
-    fun getMovies(): Deferred<TvResponse>
+    fun getTv(): Deferred<TvResponse>
 }
 
 object MoviesApi {
     val retrofitService : MoviesApiService by lazy {
         retrofit.create(MoviesApiService::class.java)
+    }
+}
+
+object TvApi {
+    val retrofitService : TvApiService by lazy {
+        retrofit.create(TvApiService::class.java)
     }
 }
