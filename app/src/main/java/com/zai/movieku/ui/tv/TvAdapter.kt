@@ -5,11 +5,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.zai.movieku.databinding.MovieRowBinding
 import com.zai.movieku.databinding.TvRowBinding
 import com.zai.movieku.network.Tv
-import com.zai.movieku.ui.movies.MovieAdapter
-import com.zai.movieku.ui.tv.TvAdapter
 
 class TvAdapter(private val clickListener: TvListener) :
     ListAdapter<Tv, TvAdapter.TvViewHolder>(DiffCallback)
@@ -17,7 +14,7 @@ class TvAdapter(private val clickListener: TvListener) :
     class TvViewHolder(
         var binding: TvRowBinding
     ) : RecyclerView.ViewHolder(binding.root){
-        fun bind(clickListener: TvListener, tv: tv) {
+        fun bind(clickListener: TvListener, tv: Tv) {
             binding.tv = tv
             binding.clickListener = clickListener
             binding.executePendingBindings()
@@ -34,19 +31,19 @@ class TvAdapter(private val clickListener: TvListener) :
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TvAdapter.TvViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TvViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
-        return TvAdapter.TvViewHolder(
+        return TvViewHolder(
             TvRowBinding.inflate(layoutInflater, parent, false)
         )
     }
 
-    override fun onBindViewHolder(holder: TvAdapter.TvViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: TvViewHolder, position: Int) {
         val tv = getItem(position)
         holder.bind(clickListener, tv)
     }
 
 }
-class MoviesListener(val clickListener: (tv: tv) -> Unit) {
-    fun onClick(tv: Tv) = clickListener(movie)
+class TvListener(val clickListener: (tv: Tv) -> Unit) {
+    fun onClick(tv: Tv) = clickListener(tv)
 }

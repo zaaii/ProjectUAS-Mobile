@@ -11,6 +11,7 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.zai.movieku.R
 import com.zai.movieku.databinding.MainFragmentDetailsBinding
+import com.zai.movieku.databinding.TvFragmentDetailsBinding
 import com.zai.movieku.ui.movies.MoviesViewModel
 import com.zai.movieku.ui.tv.TvViewModel
 
@@ -23,7 +24,7 @@ class TvDetailsFragment : Fragment() {
         container: ViewGroup?,
         savedInstancesState: Bundle?
     ): View? {
-        val binding = MainFragmentDetailsBinding.inflate(inflater)
+        val binding = TvFragmentDetailsBinding.inflate(inflater)
         binding.lifecycleOwner = this
         binding.viewModel = viewModel
 

@@ -4,14 +4,14 @@
 
     <data>
         <variable
-            name="movie"
-            type="com.zai.movieku.network.Movie" />
+            name="tv"
+            type="com.zai.movieku.network.Tv" />
         <variable
             name="clickListener"
-            type="com.zai.movieku.ui.movies.MoviesListener" />
+            type="com.zai.movieku.ui.tv.TvListener" />
         <variable
             name="viewModel"
-            type="com.zai.movieku.ui.movies.MoviesViewModel" />
+            type="com.zai.movieku.ui.tv.TvViewModel" />
     </data>
 
     <androidx.cardview.widget.CardView
@@ -20,7 +20,7 @@
         android:layout_height="250dp"
         android:layout_margin="10dp"
         android:padding="5dp"
-        android:onClick="@{() -> clickListener.onClick(movie)}"
+        android:onClick="@{() -> clickListener.onClick(tv)}"
         app:cardCornerRadius="10dp"
         app:cardElevation="10dp">
 
@@ -36,8 +36,8 @@
                 android:layout_marginTop="70dp" />
 
             <ImageView
-                android:id="@+id/movie_imageView"
-                app:imageUrl="@{movie.poster_path}"
+                android:id="@+id/tv_imageView"
+                app:imageUrl="@{tv.poster_path}"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:adjustViewBounds="true"
@@ -46,7 +46,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/movie_imageView"
+                android:layout_below="@id/tv_imageView"
                 android:orientation="vertical">
 
                 <TextView
@@ -56,7 +56,7 @@
                     android:layout_gravity="center"
                     android:layout_margin="5dp"
                     android:gravity="center"
-                    android:text="@{movie.title}"
+                    android:text="@{tv.title}"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                     android:textColor="@android:color/black"
                     android:textSize="14sp"

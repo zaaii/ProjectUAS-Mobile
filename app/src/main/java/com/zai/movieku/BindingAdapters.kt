@@ -21,8 +21,8 @@ fun bindRecyclerView(recyclerView: RecyclerView, data: List<Movie>?){
     adapter.submitList(data)
 }
 
-@BindingAdapter("listData")
-fun bindRecyclerView(recyclerView: RecyclerView, data: List<Tv>?){
+@BindingAdapter("listDatas")
+fun bindRecyclerViews(recyclerView: RecyclerView, data: List<Tv>?){
     val adapter = recyclerView.adapter as TvAdapter
     adapter.submitList(data)
 }

@@ -38,7 +38,7 @@ class TvViewModel: ViewModel(){
         }
     }
 
-    fun onMovieClicked(tv: Tv) {
+    fun onTvClicked(tv: Tv) {
         _tv.value = tv
     }
 }

@@ -10,7 +10,9 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.zai.movieku.R
 import com.zai.movieku.databinding.FragmentMoviesBinding
+import com.zai.movieku.databinding.FragmentTvBinding
 import com.zai.movieku.ui.tv.TvAdapter
+import com.zai.movieku.ui.tv.TvListener
 import com.zai.movieku.ui.tv.TvViewModel
 
 class TvFragment : Fragment() {
@@ -22,12 +24,12 @@ class TvFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val binding = FragmentMoviesBinding.inflate(inflater)
+        val binding = FragmentTvBinding.inflate(inflater)
         viewModel.getTvList()
         binding.lifecycleOwner = this
         binding.viewModel = viewModel
-        binding.recyclerView.adapter = TvAdapter(TvListener { tv ->
-            viewModel.onTvClicked(tv)
+        binding.recyclerView.adapter = TvAdapter(TvListener { tvs ->
+            viewModel.onTvClicked(tvs)
             findNavController()
                 .navigate(R.id.action_tvFragment_to_tvDetailsFragment)
         })
