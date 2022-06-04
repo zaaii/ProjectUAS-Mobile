@@ -21,4 +21,22 @@
             android:id="@+id/action_movieDetailFragment_to_moviesFragment"
             app:destination="@id/moviesFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/tvDetailsFragment"
+        android:name="com.zai.movieku.ui.tv_details.TvDetailsFragment"
+        android:label="TvDetailsFragment" >
+        <action
+            android:id="@+id/action_tvDetailFragment_to_tvFragment"
+            app:destination="@id/tvFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tvFragment"
+        android:name="com.zai.movieku.ui.movies.TvFragment"
+        android:label="fragment_tv"
+        tools:layout="@layout/fragment_tv" >
+        <action
+            android:id="@+id/action_tvFragment_to_tvDetailsFragment"
+            app:destination="@id/tvDetailsFragment" />
+    </fragment>
+
 </navigation>
