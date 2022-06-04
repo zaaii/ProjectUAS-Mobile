@@ -23,7 +23,7 @@ class MovieDetailsFragment : Fragment() {
         savedInstancesState: Bundle?
     ): View? {
         val binding = MainFragmentDetailsBinding.inflate(inflater)
-        binding.lifecycleOwner = this
+        binding.lifecycleOwner = viewLifecycleOwner
         binding.viewModel = viewModel
 
         (activity as AppCompatActivity).supportActionBar?.title = viewModel.movie.value?.title

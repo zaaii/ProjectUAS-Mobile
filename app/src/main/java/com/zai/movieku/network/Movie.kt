@@ -14,7 +14,7 @@ data class MoviesResponse(val page:Int,
                           val total_pages:Int,
                           val total_results:Int){}
 
-data class Tv(val title:String,
+data class Tv(val original_name:String,
                  val poster_path:String,
                  val first_air_date:String,
                  val vote_average:Double,

@@ -25,10 +25,10 @@ class TvDetailsFragment : Fragment() {
         savedInstancesState: Bundle?
     ): View? {
         val binding = TvFragmentDetailsBinding.inflate(inflater)
-        binding.lifecycleOwner = this
+        binding.lifecycleOwner = viewLifecycleOwner
         binding.viewModel = viewModel
 
-        (activity as AppCompatActivity).supportActionBar?.title = viewModel.tv.value?.title
+        (activity as AppCompatActivity).supportActionBar?.title = viewModel.tv.value?.original_name
         return binding.root
     }
 

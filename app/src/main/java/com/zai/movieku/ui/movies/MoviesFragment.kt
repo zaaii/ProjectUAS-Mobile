@@ -22,7 +22,7 @@ class MoviesFragment : Fragment() {
     ): View? {
         val binding = FragmentMoviesBinding.inflate(inflater)
         viewModel.getMovieList()
-        binding.lifecycleOwner = this
+        binding.lifecycleOwner = viewLifecycleOwner
         binding.viewModel = viewModel
         binding.recyclerView.adapter = MovieAdapter(MoviesListener { movies ->
             viewModel.onMovieClicked(movies)

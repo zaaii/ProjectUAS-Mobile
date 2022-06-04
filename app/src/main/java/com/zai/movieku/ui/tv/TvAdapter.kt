@@ -23,7 +23,7 @@ class TvAdapter(private val clickListener: TvListener) :
 
     companion object DiffCallback : DiffUtil.ItemCallback<Tv>() {
         override fun areItemsTheSame(oldItem: Tv, newItem: Tv): Boolean {
-            return oldItem.title == newItem.title
+            return oldItem.original_name == newItem.original_name
         }
 
         override fun areContentsTheSame(oldItem: Tv, newItem: Tv): Boolean {

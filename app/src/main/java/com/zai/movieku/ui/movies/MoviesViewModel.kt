@@ -21,10 +21,6 @@ class MoviesViewModel: ViewModel(){
     private val _movie = MutableLiveData<Movie>()
     val movie: LiveData<Movie> = _movie
 
-    fun listToString(list: List<String>): String {
-        return list.joinToString("\n")
-    }
-
     fun getMovieList() {
         viewModelScope.launch {
             _status.value = MoviesApiStatus.LOADING

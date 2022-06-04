@@ -1,4 +1,4 @@
-package com.zai.movieku.ui.movies
+package com.zai.movieku.ui.tv
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,11 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.zai.movieku.R
-import com.zai.movieku.databinding.FragmentMoviesBinding
 import com.zai.movieku.databinding.FragmentTvBinding
-import com.zai.movieku.ui.tv.TvAdapter
-import com.zai.movieku.ui.tv.TvListener
-import com.zai.movieku.ui.tv.TvViewModel
 
 class TvFragment : Fragment() {
 
@@ -26,7 +22,7 @@ class TvFragment : Fragment() {
     ): View? {
         val binding = FragmentTvBinding.inflate(inflater)
         viewModel.getTvList()
-        binding.lifecycleOwner = this
+        binding.lifecycleOwner = viewLifecycleOwner
         binding.viewModel = viewModel
         binding.recyclerView.adapter = TvAdapter(TvListener { tvs ->
             viewModel.onTvClicked(tvs)

@@ -54,7 +54,7 @@ fun bindStatus(statusImageView: ImageView, status: MoviesApiStatus?) {
     }
 }
 
-@BindingAdapter("apiStatus")
+@BindingAdapter("apiStatuss")
 fun bindStatus(statusImageView: ImageView, status: TvApiStatus?) {
     when (status) {
         TvApiStatus.LOADING -> {
