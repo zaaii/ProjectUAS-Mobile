@@ -22,7 +22,7 @@
             android:layout_height="match_parent"
             android:padding="6dp"
             android:clipToPadding="false"
-            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:listData="@{viewModel.movies}"

@@ -27,7 +27,7 @@ class TvAdapter(private val clickListener: TvListener) :
         }
 
         override fun areContentsTheSame(oldItem: Tv, newItem: Tv): Boolean {
-            return oldItem.first_air_date == newItem.first_air_date && oldItem.overview == newItem.overview && oldItem.poster_path == newItem.poster_path
+            return oldItem.first_air_date == newItem.first_air_date && oldItem.overview == newItem.overview && oldItem.poster_path == newItem.poster_path && oldItem.vote_average == newItem.vote_average
         }
     }
 

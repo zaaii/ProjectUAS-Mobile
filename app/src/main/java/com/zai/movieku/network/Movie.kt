@@ -5,7 +5,7 @@ import java.io.Serializable
 data class Movie(val title:String,
                  val poster_path:String,
                  val release_date:String,
-                 val vote_average:Double,
+                 val vote_average:String,
                  val vote_count:Int,
                  val overview: String
 ) : Serializable {}
@@ -17,7 +17,7 @@ data class MoviesResponse(val page:Int,
 data class Tv(val original_name:String,
                  val poster_path:String,
                  val first_air_date:String,
-                 val vote_average:Double,
+                 val vote_average:String,
                  val vote_count:Int,
                  val overview: String
 ) : Serializable {}

@@ -13,7 +13,7 @@ import com.zai.movieku.ui.movies.MoviesApiStatus
 import com.zai.movieku.ui.tv.TvAdapter
 import com.zai.movieku.ui.tv.TvApiStatus
 
-private const val BASE_URL_IMAGE = "https://image.tmdb.org/t/p/w500/"
+private const val BASE_URL_IMAGE = "https://image.tmdb.org/t/p/original/"
 
 @BindingAdapter("listData")
 fun bindRecyclerView(recyclerView: RecyclerView, data: List<Movie>?){

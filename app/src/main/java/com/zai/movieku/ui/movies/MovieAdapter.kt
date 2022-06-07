@@ -27,7 +27,7 @@ class MovieAdapter(private val clickListener: MoviesListener) :
         }
 
         override fun areContentsTheSame(oldItem: Movie, newItem: Movie): Boolean {
-            return oldItem.release_date == newItem.release_date && oldItem.overview == newItem.overview && oldItem.poster_path == newItem.poster_path
+            return oldItem.release_date == newItem.release_date && oldItem.overview == newItem.overview && oldItem.poster_path == newItem.poster_path && oldItem.vote_count == newItem.vote_count && oldItem.vote_average == newItem.vote_average
         }
     }
 
