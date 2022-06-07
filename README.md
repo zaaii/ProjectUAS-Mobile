@@ -1,6 +1,6 @@
 <br />
 <div align="center">
-    <img src="imgreadme/Univ" alt="Logo" width="80" height="80">
+    <img src="imgreadme/Univ.png" alt="Logo" width="80" height="80">
   </a>
 
 ## UAS PEMROGRAMAN MOBILE
