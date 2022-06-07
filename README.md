@@ -10,10 +10,10 @@ Name: <p>[Ahmad Zaini NIM: 2010817310001](https://github.com/Asriann15/)<br>
 Project Link: [https://github.com/zaaii/UAS-Pemrograman-Mobile](https://github.com/zaaii/UAS-Pemrograman-Mobile)
     
 ## About The Project
-Aplikasi Android awkoakoakow
+Discover Movie & Tv Series
 
 
 ## Built With
 
 [Android Studio](https://developer.android.com/)<br>
- [Kotlin](https://kotlinlang.org/)
+[Kotlin](https://kotlinlang.org/)
