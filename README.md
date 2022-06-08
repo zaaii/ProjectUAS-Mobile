@@ -2,6 +2,7 @@
 <div align="center">
     <img src="imgreadme/Univ.png" alt="Logo" width="80" height="80">
   </a>
+</div>
 
 ## UAS PEMROGRAMAN MOBILE
 Name: <p>[Ahmad Zaini NIM: 2010817310001](https://github.com/Asriann15/)<br>
@@ -10,7 +11,7 @@ Name: <p>[Ahmad Zaini NIM: 2010817310001](https://github.com/Asriann15/)<br>
 Project Link: [https://github.com/zaaii/UAS-Pemrograman-Mobile](https://github.com/zaaii/UAS-Pemrograman-Mobile)
     
 ## About The Project
-Theme           : Discover Movie & Tv Series
+Theme           : Discover Movie & Tv Series <br>
 **Data Model**  : Movie & Tv Series
 
 ## Built With
