@@ -19,7 +19,7 @@ Theme           : Discover Movie & Tv Series
 [Kotlin](https://kotlinlang.org/)
     
 ## API
-[] DOCUMENTATION        = https://developers.themoviedb.org/3
-[] BASE URL             = https://api.themoviedb.org/3/
-[] DISCOVER MOVIE       = https://api.themoviedb.org/3/discover/movie?api_key=API_KEY&language=en-US
-[] DISCOVER TV SERIES   = https://api.themoviedb.org/3/discover/tv?api_key=API_KEY&language=en-US
+DOCUMENTATION        = https://developers.themoviedb.org/3 <br>
+BASE URL             = https://api.themoviedb.org/3/ <br>
+DISCOVER MOVIE       = https://api.themoviedb.org/3/discover/movie?api_key=API_KEY&language=en-US <br>
+DISCOVER TV SERIES   = https://api.themoviedb.org/3/discover/tv?api_key=API_KEY&language=en-US <br>
