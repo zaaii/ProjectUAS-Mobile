@@ -5,8 +5,8 @@
 </div>
 
 ## UAS PEMROGRAMAN MOBILE
-Name: <p>[Ahmad Zaini NIM: 2010817310001](https://github.com/Asriann15/)<br>
-  [Muhammad Asriannoor NIM: 2010817310015](https://github.com/zaaii/)
+Name: <p>[Ahmad Zaini NIM: 2010817310001](https://github.com/zaaii/)<br>
+  [Muhammad Asriannoor NIM: 2010817310015](https://github.com/Asriann15/)
 
 Project Link: [https://github.com/zaaii/UAS-Pemrograman-Mobile](https://github.com/zaaii/UAS-Pemrograman-Mobile)
     
