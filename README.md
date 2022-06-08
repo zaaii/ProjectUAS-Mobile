@@ -10,10 +10,16 @@ Name: <p>[Ahmad Zaini NIM: 2010817310001](https://github.com/Asriann15/)<br>
 Project Link: [https://github.com/zaaii/UAS-Pemrograman-Mobile](https://github.com/zaaii/UAS-Pemrograman-Mobile)
     
 ## About The Project
-Discover Movie & Tv Series
-
+Theme           : Discover Movie & Tv Series
+**Data Model**  : Movie & Tv Series
 
 ## Built With
 
 [Android Studio](https://developer.android.com/)<br>
 [Kotlin](https://kotlinlang.org/)
+    
+## API
+[] DOCUMENTATION        = https://developers.themoviedb.org/3
+[] BASE URL             = https://api.themoviedb.org/3/
+[] DISCOVER MOVIE       = https://api.themoviedb.org/3/discover/movie?api_key=API_KEY&language=en-US
+[] DISCOVER TV SERIES   = https://api.themoviedb.org/3/discover/tv?api_key=API_KEY&language=en-US
